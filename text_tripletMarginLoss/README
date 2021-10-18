@@ -1,0 +1,20 @@
+When getting new data from labelbox, save in /PARSE DATA/ and run 'python3.8 parse_labelbox.py --json_file <json_file>'.
+Then, drag the new 'triplet_data.csv' into /Data/ and delete the old 'triplet_data.csv'
+
+To run experiments, use /experiments/run_experiments.py and change the code
+
+
+TODO:
+- compute BoW vectors for data to reduce run time 
+- fix NaNs (do not occur when unsupervised; beta=0)
+- Add gradient tracking to wandb
+    -  check to see which gradient produces NaNs
+        - add weight decay to the gradient (same order as LR)
+- get csv file with all amazon reviews used for traning
+
+Long term TODO:
+- trade off graphs (with topic tables)
+- start plotting thetas (topic/word distributions)
+-
+
+
